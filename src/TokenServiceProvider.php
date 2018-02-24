@@ -3,7 +3,6 @@
 namespace Mayoz\Token;
 
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Request;
 use Illuminate\Support\ServiceProvider;
 
 class TokenServiceProvider extends ServiceProvider
