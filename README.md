@@ -165,3 +165,45 @@ class UserController
 }
 
 ```
+
+## Token Generator
+
+By default, the generated token is a string of random 36 chars. If you want to create more meaningful (such as uuid4) tokens, you are free to change the generator method.
+
+Let's make change to generate of `uuid4` string. Open the `app/Providers/AuthServiceProvider` file and apply the additions:
+
+```php
+<?php
+
+namespace App\Providers;
+
+use Mayoz\Token\Generator;
+// ...
+
+class AuthServiceProvider extends ServiceProvider
+{
+    // ...
+
+    /**
+     * Register any authentication / authorization services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        // ...
+
+        Generator::extend(function () {
+            return \Ramsey\Uuid\Uuid::uuid4()->toString();
+        });
+    }
+}
+```
+
+If there is no `ramsey/uuid` package in your application, you can install with:
+
+```
+composer require ramsey/uuid
+```
+
+Cheers.

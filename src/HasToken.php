@@ -29,7 +29,7 @@ trait HasToken
             : null;
 
         return $this->tokens()->create([
-            'api_token' => str_random(36),
+            'api_token' => Generator::generate(),
             'expired_at' => $expired_at,
         ]);
     }
