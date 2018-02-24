@@ -19,7 +19,7 @@ trait HasToken
     /**
      * Generate a new token and returns it.
      *
-     * @param  int  minute
+     * @param  int  $minute
      * @return \Illuminate\Database\Eloquent\Model
      */
     public function generateToken($minute = null)
