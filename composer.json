@@ -1,0 +1,41 @@
+{
+    "name": "mayoz/laravel-tokens",
+    "description": "Multi-token support for Laravel Auth.",
+    "keywords": ["laravel", "auth", "multiple token"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/mayoz/laravel-tokens/issues",
+        "source": "https://github.com/mayoz/laravel-tokens"
+    },
+    "authors": [
+        {
+            "name": "Sercan Cakir",
+            "email": "srcnckr@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0.0",
+        "illuminate/auth": "~5.5",
+        "illuminate/contracts": "~5.5",
+        "illuminate/http": "~5.5",
+        "illuminate/queue": "~5.5",
+        "illuminate/support": "~5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mayoz\\Token\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mayoz\\Token\\TokenServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
