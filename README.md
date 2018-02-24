@@ -1,5 +1,11 @@
 # Laravel Multi Token
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mayoz/laravel-tokens.svg?style=flat-square)](https://packagist.org/packages/mayoz/laravel-tokens)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Quality Score](https://img.shields.io/scrutinizer/g/mayoz/laravel-tokens.svg?style=flat-square)](https://scrutinizer-ci.com/g/mayoz/laravel-tokens)
+[![StyleCI](https://styleci.io/repos/122767611/shield?branch=master)](https://styleci.io/repos/122767611)
+[![Total Downloads](https://img.shields.io/packagist/dt/mayoz/laravel-tokens.svg?style=flat-square)](https://packagist.org/packages/mayoz/laravel-tokens)
+
 ## Introduction
 
 This package provides a simple solution for give multiple token to your application's users. This solution is similar to Laravel's TokenGuard class.
