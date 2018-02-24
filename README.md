@@ -12,7 +12,6 @@ This package provides a simple solution for give multiple token to your applicat
 
 This package is for Laravel 5.5 and above.
 
-
 ## Installation
 
 You can install the package via composer using:
@@ -49,7 +48,6 @@ php artisan vendor:publish --provider="Mayoz\Token\TokenServiceProvider" --tag="
 ```
 
 If you need you are free to change your `config` file.
-
 
 ## Implementation
 
@@ -97,7 +95,6 @@ And finally, you will add the new guard to your application. Open the `config/au
 ```
 
 Congratulations!
-
 
 ## Usage
 
@@ -207,3 +204,19 @@ composer require ramsey/uuid
 ```
 
 Cheers.
+
+### Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+## Security Vulnerabilities
+
+If you discover any security related issues, please create a new issue with using the "Bug" label. All security vulnerabilities will be promptly addressed.
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
